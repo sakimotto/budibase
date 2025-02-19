@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "lib": ["ESNext"],
+    "baseUrl": ".",
+    "paths": {
+      "@budibase/*": [
+        "../*/src/index.ts",
+        "../*/src/index.js",
+        "../*",
+        "../../node_modules/@budibase/*"
+      ],
+      "assets/*": ["assets/*"],
+      "@/*": ["src/*"]
+    }
+  }
+}
